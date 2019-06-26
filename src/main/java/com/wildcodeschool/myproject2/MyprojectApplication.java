@@ -27,7 +27,7 @@ public class MyprojectApplication {
         SpringApplication.run(MyprojectApplication.class, args);
     }
 
-    @RequestMapping("/Doctor/{number}")
+    @RequestMapping("/doctor/{number}")
     @ResponseBody
     public Doctor getDoctor(@PathVariable int number, @RequestParam(value = "details", required=false) boolean details) {
         if (number >= 9 && number <= 13) {
